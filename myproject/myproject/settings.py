@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-44=i(mt7rmti7)cz1e(u@_ok8o$!fty#7p#3rswex^46h0hh%)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 
 # Application definition
@@ -129,7 +129,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # settings.py
-
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-firebase-djangogit-1774386044032.cluster-ye3eisvazjh36x6dv44gpklwl6.cloudworkstations.dev',
+    'https://*.cloudworkstations.dev',
+    'http://*.cloudworkstations.dev',
+    'http://*.127.0.0.1',
+    'https://*.127.0.0.1',
 ]
