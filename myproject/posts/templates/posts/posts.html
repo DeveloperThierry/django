@@ -7,7 +7,6 @@ Posts
 {% block content%}
 <h1>Posts</h1>
 <p>
-
-    Check out this <a href="/about">About</a> page.
+    Check out this <a href="{% url "posts:posts_list"%}">List of Posts</a> page.
 </p>
 {%endblock%}

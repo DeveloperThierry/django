@@ -124,3 +124,8 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# settings.py
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-firebase-djangogit-1774386044032.cluster-ye3eisvazjh36x6dv44gpklwl6.cloudworkstations.dev',
+]

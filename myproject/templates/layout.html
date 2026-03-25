@@ -9,7 +9,7 @@
   </head>
   <body>
     <nav>
-      <a href="/">🏠</a> | <a href="/about">🏤</a> | <a href="/posts">✉️</a> |
+      <a href="/">🏠</a> | <a href="/about">🏤</a> | <a href="{% url "posts:posthome"%}">✉️</a> |
     </nav>
     <main>{% block content%} {% endblock %}</main>
   </body>
