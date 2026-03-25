@@ -7,6 +7,8 @@ Posts
 {% block content%}
 <h1>Posts</h1>
 <p>
-    Check out this <a href="{% url "posts:posts_list"%}">List of Posts</a> page.
+    Check out this <a href="{% url "posts:posts_list"%}">List of Posts</a> page.<br/>
+    Anything on your mind? <a href="{% url "posts:new-post"%}">Create Post</a>
+
 </p>
 {%endblock%}
