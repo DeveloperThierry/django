@@ -9,7 +9,9 @@
   </head>
   <body>
     <nav>
-      <a href="/">🏠</a> | <a href="/about">🏤</a> | <a href="{% url "posts:posthome"%}">✉️</a> |
+      <a href="/"> <span role="img" aria-label="home">🏠</span> </a> | 
+      <a href="/about"> <span role="img" aria-label="about">🏤</span></a> | 
+      <a href="{% url "posts:posthome"%}"><span role="img" aria-label="posts">✉️</span></a> |
     </nav>
     <main>{% block content%} {% endblock %}</main>
   </body>
