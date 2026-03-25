@@ -13,6 +13,10 @@
       <a href="/about"> <span role="img" aria-label="about">🏤</span></a> | 
       <a href="{% url "posts:posthome"%}"><span role="img" aria-label="posts">✉️</span></a> |
       <a href="{% url "users:usershome" %}"><span role="img" aria-label="users">👤</span></a> |
+      <form class="logout" action="{% url "users:logout_user" %}" method="post">
+        {% csrf_token %}
+        <button class="logout-button" aria-label="logout">👋</button>
+      </form>
     </nav>
     <main>{% block content%} {% endblock %}</main>
   </body>
