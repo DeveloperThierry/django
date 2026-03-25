@@ -1,0 +1,14 @@
+{% extends "layout.html"%}
+
+{% block title%}
+Users
+{%endblock%}
+
+{% block content%}
+<h1>Users</h1>
+<p>
+    Check out this <a href="{% url "users:users_list"%}">List of Users</a> page.
+    <br/>
+    Need to create a user? <a href="{% url "users:register_user"%}">Register</a>
+</p>
+{%endblock%}
